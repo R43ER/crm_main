@@ -41,7 +41,7 @@ function Register() {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://" + window.location.hostname + "/api/register",
+        "http://" + window.location.hostname + "/api/api/register",
         formData
       );
       const { token, user } = response.data;
